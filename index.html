@@ -3,31 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portal Acessível</title>
+  <title>Portal da Terceira Idade</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Portal da Terceira Idade</h1>
-    <div class="controles">
-      <button id="btn-fonte-aumentar" aria-label="Aumentar tamanho do texto">A+</button>
+  <header class="barramenu">
+    <div class="logo">
+      <span class="icone-paz">🕊️</span>
+      <h1>Vida Tranquila</h1>
+    </div>
+    
+    <div class="painel-acessibilidade">
       <button id="btn-fonte-diminuir" aria-label="Diminuir tamanho do texto">A-</button>
-      <button id="btn-tema" aria-label="Alternar entre modo claro e escuro">Modo Escuro</button>
+      <button id="btn-fonte-aumentar" aria-label="Aumentar tamanho do texto">A+</button>
+      <button id="btn-tema" aria-label="Alternar entre modo claro e escuro">Modo Escuro 🌙</button>
     </div>
   </header>
 
-  <main>
-    <section class="cartao">
-      <h2>Bem-vindo ao nosso espaço</h2>
-      <p>Este site foi projetado com letras maiores, botões destacados e visual limpo para facilitar sua leitura e navegação.</p>
+  <main class="conteudo-principal">
+    <section class="banner-boas-vindas">
+      <h2>Um espaço feito com carinho para você</h2>
+      <p>Navegue de forma simples, com textos fáceis de ler, botões grandes e cores que acalmam a vista.</p>
     </section>
 
-    <section class="cartao">
-      <h2>Dicas de Saúde e Bem-Estar</h2>
-      <p>Mantenha uma rotina de caminhadas leves e lembre-se de beber água regularmente ao longo do dia.</p>
-      <button class="btn-acao">Saiba Mais</button>
-    </section>
+    <div class="grade-cards">
+      <article class="cartao">
+        <div class="icone-card">🌱</div>
+        <h3>Saúde & Bem-Estar</h3>
+        <p>Aprenda Alongamentos leves para praticar no dia a dia e manter suas articulações saudáveis.</p>
+        <button class="btn-acao">Ler artigo</button>
+      </article>
+
+      <article class="cartao">
+        <div class="icone-card">🍵</div>
+        <h3>Momentos de Paz</h3>
+        <p>Descubra receitas de chás naturais que ajudam a relaxar a mente e ter uma noite de sono tranquila.</p>
+        <button class="btn-acao">Ler artigo</button>
+      </article>
+    </div>
   </main>
 
   <script src="script.js"></script>
