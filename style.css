@@ -1,0 +1,82 @@
+/* Variáveis para Tema Claro (Padrao Clean) */
+:root {
+  --bg-color: #f8f9fa;
+  --card-bg: #ffffff;
+  --text-color: #1a1a1a;
+  --primary-color: #0056b3;
+  --primary-text: #ffffff;
+  --border-color: #cccccc;
+}
+
+/* Variáveis para Tema Escuro */
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --text-color: #ffffff;
+  --primary-color: #66b2ff;
+  --primary-text: #000000;
+  --border-color: #444444;
+}
+
+/* Configurações Globais de Acessibilidade */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25rem; /* Fonte maior para facilitar a leitura */
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+/* Botões Grandes e Fáceis de Clicar */
+button {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 14px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+button:focus {
+  outline: 4px solid #ffbf47; /* Destaque de foco visível */
+}
+
+#theme-toggle {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 2px solid var(--border-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--primary-text);
+}
